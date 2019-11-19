@@ -1,0 +1,113 @@
+.cart__section--container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background: rgba(248, 248, 248,0.9);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:90vh;
+    width:90vw;
+    margin:auto;
+    color:black;
+    position: sticky;
+    bottom:25px;
+    z-index: 1;
+    display:none;
+   
+    
+    
+
+    .cart__column--1 {
+        text-align: right;
+        h1 {
+            text-align: left;
+            padding: 1.4em .2em;
+            font-size: 4.2em;
+            z-index: 1;
+            width: 150px;
+            position: absolute;
+            top: 35px;
+            font-family: 'Roboto Thin';
+            text-shadow: 7px 5px 2px black;
+            border-bottom: 2px dashed $colorLight1;
+           animation: rgbFontColor 5s infinite alternate;
+        }
+        img {
+            padding: 2em 3em;
+            width: 340px;
+            height: auto;
+            @include laptop{
+                width: 300px;
+            }
+            @include tablet{
+                width: 250px;
+              
+            }
+        }
+    }
+
+    .cart__column--2 {
+        padding:3em;
+        @include laptop{
+            padding:2em;
+        }
+        @include tablet{
+            padding:1em;
+        }
+       h1{
+        font-family: 'Roboto Light';
+        font-size: 2em;
+        @include laptop{
+            font-size: 1.5em;
+        }
+        @include tablet{
+            font-size: 1em;
+        }
+       }
+       p{
+           color:rgb(151, 151, 151);
+            font-family: 'Roboto Light';
+            padding:1em;
+            @include laptop{
+                font-size: .9em;
+            }
+            @include tablet{
+                font-size: .8em;
+            }
+       }
+    }
+
+    .cart__button{
+        opacity:0.8;
+        cursor: pointer;
+        color:white;
+        background-color:black;
+        border:none;
+        padding:.5em 7em;
+        font-size:.9em;
+ 
+        &:hover{
+           opacity:1;
+        }
+        @include laptop{
+            font-size:.8em;
+            padding:.5em 5em;
+        }
+        @include tablet{
+            font-size: .6em;
+            padding:.5em 2em;
+        }
+      
+    }
+
+    .exit__button{
+        cursor: pointer;
+        position: absolute;
+        top:10px;
+        right:10px;
+        background: none;
+        border:none;
+    }
+}

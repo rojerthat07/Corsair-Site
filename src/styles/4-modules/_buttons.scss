@@ -1,0 +1,16 @@
+.buy__button{
+    opacity:0.8;
+    cursor: pointer;
+    color:white;
+    background-color:black;
+    border:1px solid $colorLight1;
+    padding:.5em 1em;
+    @include tablet{
+       font-size: .8em;
+    }
+
+    &:hover{
+       opacity:1;
+    }
+    animation: rgbColor 8s infinite alternate;
+}

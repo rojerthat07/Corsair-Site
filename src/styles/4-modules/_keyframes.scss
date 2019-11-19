@@ -1,0 +1,17 @@
+@keyframes rgbColor {
+    0%   {border:1px solid cyan;}
+    20%  {border:1px solid yellowgreen;}
+    40%  {border:1px solid yellow;}
+    60% {border:1px solid orange;}
+    80% {border:1px solid red;}
+    100% {border:1px solid rgb(223, 18, 223);}
+}
+
+@keyframes rgbFontColor {
+    0%   {color: cyan;}
+    20%  {color: yellowgreen;}
+    40%  {color: yellow;}
+    60% {color: orange;}
+    80% {color: red;}
+    100% {color: rgb(223, 18, 223);}
+}

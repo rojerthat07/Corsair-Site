@@ -1,0 +1,14 @@
+.corsair__form--container{
+    height:90vh;
+    width:90vw;
+
+    form{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-content: center;
+        width:50%;
+    }
+
+    
+}

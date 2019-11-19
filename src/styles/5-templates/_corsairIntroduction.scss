@@ -1,0 +1,107 @@
+.corsair__introduction--container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+
+    @include tablet {
+        grid-template-columns: 1fr;
+        padding: 2em;
+    }
+
+
+    .introduction__column--1 {
+        text-align: right;
+
+        h1 {
+            text-align: left;
+            padding: 1.4em .2em;
+            font-size: 4.2em;
+            z-index: 1;
+            font-weight: lighter;
+            width: 150px;
+            position: absolute;
+            top: 35px;
+            font-family: 'Trajan Pro';
+            text-shadow: 7px 5px 2px black;
+            border-bottom: 2px dashed $colorLight1;
+
+            @include laptop {
+              
+                font-size: 3.5em;
+            }
+
+            @include tablet {
+                width: 240px;
+                top: 175px;
+                font-size: 4.2em;
+            }
+
+            @include mobile {
+                width: 170px;
+                top: 275px;
+                font-size: 2.5em;
+
+            }
+
+        }
+
+        img {
+            padding: 2em 3em;
+            width: 340px;
+            height: auto;
+
+            @include tablet {
+                width: 280px;
+            }
+
+        }
+    }
+
+    .introduction__column--2 {
+        video {
+            width: 450px;
+            height: auto;
+
+            @include laptop {
+                width: 400px;
+            }
+
+            @include tablet {
+                width: 350px;
+            }
+        }
+
+        h2 {
+
+            @include tablet {
+                font-size: 1em;
+            }
+        }
+
+        p {
+            font-size: 0.9em;
+            line-height: 1.7em;
+            padding: 0em 3em;
+
+            @include laptop {
+                font-size: .8em;
+            }
+
+            @include tablet {
+                font-size: .8em;
+            }
+        }
+
+    }
+}
+
+.corsair__header {
+    background: linear-gradient(rgba(41, 41, 41, 0.5), rgba(97, 6, 6, 0.7)), url('/build/images/ultron-bg.jpg');
+    background-size: cover;
+    height: 100%;
+    background-position-x: -50px;
+
+}

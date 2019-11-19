@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ultron - Corsair One i160</title>
+    <link rel="stylesheet" href="/build/styles/main.min.css">
+    <link rel="icon" href="images/logo.jpg">
+    <!--ScrollMagic and Gsap Javascripts-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+        integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
+        integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"
+        integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"
+        integrity="sha256-+9YNuItWuR4sbqeaNiJOxG0BvptYz4fbUXbIZoH5Jwo=" crossorigin="anonymous"></script>
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="styles/fontawesome/css/all.min.css">
+</head>
+
+<body>
+
+
+    <div class="corsair__header">
+        <!--Navigation-->
+        <div class="navigation__container">
+            <div class="navigation__logo">
+                <img src="images/nav-logo.png" alt="">
+            </div>
+            <div class="navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item">Home</li>
+                    <li class="navigation__item">Developer</li>
+                    <li class="navigation__item">Facts</li>
+                    <li class="navigation__item">About</li>
+                    <li class="navigation__item">Support</li>
+                </ul>
+            </div>
+            <button class="buy__button" onclick='cartOpen()'>Buy Now</button>
+        </div>
+        <!--Navigation-->
+        <!--Section-->
+        <div class="corsair__introduction--container">
+            <div class="introduction__column--1">
+                <h1><span class="colorLight1 bold"> CORSAIR</span> ONE i160</h1>
+                <img src="/build/images/corsair-one-pc.png" alt="" srcset="">
+            </div>
+            <div class="introduction__column--2">
+                <h2>
+                    <Experience class="light">Experience the <span class="colorLight1">ULTIMATE</span> High-end</span>
+                        Gaming
+                </h2>
+                <video src="/build/videos/cod.mp4" autoplay loop muted loop></video>
+                <p>Uncompromising performance! The Corsair One i160 is a compact gaming PC that packs extremely powerful
+                    hardware into an impressively small case. Corsair has included a proprietary and patented liquid
+                    cooling system to keep the Core i9-9900K and RTX 2080 Ti cool even during long gaming sessions,
+                    which it complements with 32 GB of DDR4-2666 RAM and plenty of storage. Read on to find out how well
+                    the Corsair One i160 performs in our tests and whether its liquid cooling system is up to scratch.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--Section-->
+    <div class="corsair__video--container">
+        <a href="https://youtu.be/5AsdFJqW_Q0" target="_blank"><button class="corsair__video--button">WATCH
+                PREVIEW</button></a>
+        <h1 class="corsair__video--title "> CORSAIR ONE <span
+                style="font-size: 1.1em;color:red;font-family: 'Roboto Light';">ONE LIFE, MAKE IT COUNT.</span> </h1>
+        <video src="/build/videos/corsair-video.mp4" autoplay muted class="corsair__video"></video>
+        <p class="corsair__video--description"><span style="font-weight: bold;">CORSAIR ONE i160 </span> redefines what
+            you can expect from a high-performance gaming PC. Incredibly fast, amazingly compact, quiet and stunningly
+            designed.</p>
+    </div>
+    <!--Section-->
+    <div class="image__caption--container" id="rtx2080">
+        <div class="image__caption--image"> <img src="/build/images/rtx2080.jpg" alt="NVIDIA GeForce RTX 2080 Ti"></div>
+        <div class="image__caption--description">
+            <h3 class="image__caption--heading">Play without Pain By<span style="color:greenyellow"> NVIDIA GeForce RTX
+                    2080 Ti</span></h3>
+            <p class="image__caption--information" id="rtx2080__info">NVIDIA’s newest flagship graphics card is a
+                revolution in gaming realism and performance. Its powerful NVIDIA Turing™ GPU architecture, breakthrough
+                technologies, and 11 GB of next-gen, ultra-fast GDDR6 memory make it the world’s ultimate gaming GPU.
+            </p>
+        </div>
+    </div>
+    <div class="image__caption--container-left" id="intelcore9">
+        <div class="image__caption--description">
+            <h3 class="image__caption--heading">Equipped with <span style="color:rgb(101, 197, 221)"> Intel Core
+                    i9-9900K</span></h3>
+            <p class="image__caption--information" id="intelcore9__info">Fastest processor to complement 1080p gaming on
+                the market. Good for multitasking. Whiz-bang performance for single-core tasks. Works on established
+                base of Z390-chipset boards.</p>
+        </div>
+        <div class="image__caption--image">
+            <img src="/build/images/icore.jpg" alt="Intel Core i9-9900K"></div>
+    </div>
+    <div class="image__caption--container" id="vengence">
+        <div class="image__caption--image">
+            <img src="/build/images/vengence.png" alt="2x16GB DDR4-2666"></div>
+        <div class="image__caption--description">
+            <h3 class="image__caption--heading"> Game Packed with <span style="color:rgb(252, 255, 47)"> VENGEANCE
+                    LPX</span></h3>
+            <p class="image__caption--information" id="vengence__info">VENGEANCE LPX memory is designed for
+                high-performance overclocking. The heatspreader is made of pure aluminum for faster heat dissipation,
+                and the eight-layer PCB helps manage heat and provides superior overclocking headroom.</p>
+        </div>
+    </div>
+
+
+
+    <!--Section-->
+    <h1 class="section__main-heading">Is Corsair One i160 Worth it?</h1>
+    <div class="threecolumn__section--container">
+
+        <div class="column">
+            <div class="column__image"> <img src="/build/images/craftsman.png" alt=""> </div>
+            <div class="column__description">
+                <h1 class="column__heading">Craftmanship</h1>
+                <p class="column__information">Every PC receives the best quality packaging, including double boxing and
+                    instafoam to hold all of your PC’s components securely in place. Our best packaging is available to
+                    all customers absolutely free.</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="column__image"><img src="/build/images/performance.png" alt=""> </div>
+            <div class="column__description">
+                <h1 class="column__heading">Performance</h1>
+                <p class="column__information">Every Ultron Computer is expertly crafted to maximize every bit of power
+                    in your system. Rigorously tested for up to 72 hours, we ensure that your PC is functioning at its
+                    absolute maximum for years of hard core usage.</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="column__image"> <img src="/build/images/warranty.png" alt=""></div>
+            <div class="column__description">
+                <h1 class="column__heading">Guaranteed</h1>
+                <p class="column__information">We stand behind our gaming computers with an unrivaled, 2-year labor
+                    1-year parts Ultron Warranty at no additional charge, on desktops only. We firmly believe in the
+                    quality and longevity of our PCs. With our 2-year warranty, you will too.</p>
+            </div>
+        </div>
+
+    </div>
+    <hr>
+    <!--Section-->
+    <div class="twocolumn__section--container">
+
+        <div class="column__image"><img src="/build/images/layout.png" alt=""></div>
+        <div class="column__description">
+            <h1 class="column__heading">Designed for You</h1>
+            <p class="column__information">A completely redesigned internal layout, in conjunction with a patented
+                convection-assisted liquid cooling system for both the processor and graphics card, expels hot air
+                through a vent in the top of the chassis, allowing the CORSAIR ONE PRO i180 to efficiently disperse heat
+                while maintaining a compact 12-liter volume. </p>
+        </div>
+
+    </div>
+    <hr>
+    <!--Section-->
+    <div class="corsair__section--container">
+        <div class="corsair__section--description">
+            <h1 class="corsair__section--heading">ULTIMATE GAMING PC OF 2019</h1>
+            <p class="corsair__section--information">A CES 2019 Innovation Award Honoree, the CORSAIR ONE i160 has been
+                created in collaboration with Intel to exceed the demands of today’s most ambitious content creators. It
+                has been reviewed by the experts across the internet and yet we are not disapointed..</p>
+
+        </div>
+        <div class="corsair__section--media">
+            <video src="/build/videos/corsair-review.mp4" controls></video>
+        </div>
+    </div>
+
+
+
+
+    <hr>
+
+    <!--Section-->
+    <table class="corsair__table">
+        <caption class="corsair__table--caption">Corsair One i160 Specifications</caption>
+        <tr>
+            <td class="table__detail">Warranty</td>
+            <td>Two years</td>
+        </tr>
+        <tr>
+            <td class="table__detail">Weight</td>
+            <td>7.38kg</td>
+        </tr>
+        <tr>
+            <td class="table__detail">Form Factor</td>
+            <td>Mini-ITX</td>
+        </tr>
+        <tr>
+            <td class="table__detail">Dimensions</td>
+            <td>200mm x 172.5mm x 380mm</td>
+        </tr>
+        <tr>
+            <td class="table__detail">CPU</td>
+            <td class="colorGold"> Intel Core i9-9900K</td>
+        </tr>
+        <tr>
+            <td class="table__detail">GPU</td>
+            <td class="colorGold">NVIDIA GeForce RTX 2080 Ti</td>
+        </tr>
+        <tr>
+            <td class="table__detail">DRAM</td>
+            <td>2x16GB DDR4-2666</td>
+        </tr>
+        <tr>
+            <td class="table__detail">Liquid Cooling</td>
+            <td>Liquid CPU/GPU</td>
+        </tr>
+        <tr>
+            <td class="table__detail">Storage</td>
+            <td>480GB M.2 NVMe SSD, 2TB 5400RPM 2.5” HDD</td>
+        </tr>
+        <tr>
+            <td class="table__detail">Motherboard</td>
+            <td>Z370 Mini-ITX</td>
+        </tr>
+        <tr>
+            <td class="table__detail">Operating System</td>
+            <td>Windows 10 Home</td>
+        </tr>
+        <tr>
+            <td class="table__detail">Networking</td>
+            <td>Gigabit Ethernet, 802.11ac, Bluetooth 4.2</td>
+        </tr>
+        <tr>
+            <td class="table__detail">Power Supply</td>
+            <td>Corsair SF600, 80 Plus Gold</td>
+        </tr>
+        <tr>
+            <td class="table__detail">External Connections</td>
+            <td>FRONT: 2x USB 3.1 Gen 1, Combo Headphone/Mic, HDMI 2.0a ; REAR: 2x USB 3.1 Gen 2 (Type-A and Type-C), 2x
+                USB 3.1 Gen 1, 2x USB 2.0, 7.1 Audio, Ethernet, PS/2, 3x DisplayPort</td>
+        </tr>
+
+    </table>
+    <!--Section-->
+    <div class="buy__section--container">
+        <div class="buy__column--1">
+            <h1>CORSAIR ONE i160</h1>
+            <img src="/build/images/corsair-one-pc.png" alt="" srcset="">
+        </div>
+        <div class="buy__column--2">
+            <h1>UNLEASH THE BEAST</h1>
+            <button class="buy__button" onclick='cartOpen()'>Buy Now</button>
+        </div>
+    </div>
+
+    <!--Section-->
+    <div class="corsair__footer--container">
+
+        <div class="corsair__footer">
+            <div class="corsair__footer-icons">
+                <i class="fab fa-github"></i>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+
+            <p class="corsair__footer--copyright">© Jer Carlo D. Catallo 2019 – Terms of Service – Return Policy</p>
+        </div>
+    </div>
+    <!--Section-->
+    <div class="cart__section--container" id="cart__section--container">
+        <div class="cart__column--1">
+            <img src="/build/images/corsair-one-pc.png" alt="" srcset=""></div>
+        <div class="cart__column--2">
+            <p>SKU CS-9020003-NA</p>
+            <h1>CORSAIR ONE i160 Compact Gaming PC</h1>
+            <h2>$3,399.99 <span style="font-family: 'Roboto Thin';font-size:.8em">USD</span></h2>
+            <p>
+                CORSAIR ONE i160 redefines what you can expect from a high-performance gaming PC. Incredibly fast,
+                amazingly compact, quiet and stunningly designed.</p>
+            <p>Quantity: <input type="number" value="1" style="width:3em;"></p>
+            <a href="https://www.corsair.com/ww/en/Categories/Products/Systems/CORSAIR-ONE/CORSAIR-ONE-GAMING-PC/p/CS-9020003-NA"
+                target="_blank"> <button class="cart__button">CORSAIR OFFICIAL SITE</button>
+            </a>
+        </div>
+        <button class="exit__button" onclick='cartExit()'>X</button>
+    </div>
+
+    <script src="/src/scripts/app.js"></script>
+</body>
+
+</html>

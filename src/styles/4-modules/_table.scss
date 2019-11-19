@@ -1,0 +1,35 @@
+.corsair__table{
+    padding:1em;
+    font-family: 'Roboto Light';
+    width:80%;
+    margin:auto;
+ 
+    @include tablet{
+        width:90%;
+    }
+  
+    border-left:1px solid white;
+    .corsair__table--caption{
+        font-size: 2em;
+        @include tablet{
+            font-size:1em;
+        }
+    }
+    tr{
+     
+    }
+    td{
+        padding:.4em 2em;
+        @include tablet{
+            font-size:.7em;
+        }
+    }
+    tr:nth-child(odd){
+        background-color: $colorDark2;
+        padding:1em;
+    }
+    .table__detail{
+        font-weight: bold;
+      
+    }
+}

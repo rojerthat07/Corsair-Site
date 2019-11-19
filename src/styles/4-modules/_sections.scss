@@ -1,0 +1,156 @@
+.section__main-heading {
+    text-align: center;
+    font-family: 'Roboto thin';
+    font-size: 2.5em;
+    padding: 2em 0 2em 0;
+    margin: 0;
+    text-transform: uppercase;
+    border-top: 1px solid red;
+    @include tablet{
+        font-size:2em;
+        padding: 2em .5em 2em .5em;
+    }
+}
+.corsair__section--container {
+    text-align: center;
+    height: 100vh;
+    @include laptop{
+        height: 60%;
+        }
+    .corsair__section--media {
+        img {
+            width: 350px;
+            height: auto;
+        }
+        video{
+            width: 80%;
+            height: auto;
+        }
+    }
+    .corsair__section--description {
+        padding: 2em 3em;
+
+        .corsair__section--heading {
+            font-family: 'Roboto Light';
+            font-size: 3em;
+            @include laptop{
+                font-size: 2em;
+                }
+        }
+
+        .corsair__section--information {
+            font-family: 'Roboto Light';
+            @include laptop{
+                font-size: .8em;
+                line-height:1.5em;
+                }
+        }
+    }
+}
+
+.twocolumn__section--container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    align-items:center;
+    height:100%;
+   
+    @include laptop{
+        height:40vh;
+        }
+        @include tablet{
+        grid-template-columns: 1fr;
+            }
+        .column__image {
+            img {
+                width: 550px;
+                height: auto;
+                @include laptop{
+                    width: 450px;
+                    }
+                    @include tablet{
+                        width: 250px;
+                            }
+                   
+            }
+        }
+
+        .column__description {
+            padding: 0 2em;
+            .column__heading {
+                @include laptop{
+                    font-size:1.2em;
+                    }
+                    @include tablet{
+                        padding: 0 0em;
+                        }
+            }
+            .column__information {
+                line-height: 2em;
+                font-size: .8em;
+                @include laptop{
+                    font-size:.9em;
+                    }
+                    @include tablet{
+                        font-size:.8em;
+                        }
+                        
+                
+            }
+        }
+}
+
+
+
+
+.threecolumn__section--container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    text-align: center;
+    padding: 2em 2em;
+    @include laptop{
+        grid-template-columns: 1fr;
+        padding: 1em 1em;
+        }
+        @include tablet{
+            grid-template-columns: 1fr;
+        }
+
+    .column {
+        padding: 2em;
+        .column__image {
+            img {
+                width: 150px;
+                height: auto;
+                @include tablet{
+                    width: 120px;
+                }
+            }
+        }
+
+        .column__description {
+            @include laptop{
+                padding:0em 3em;
+            }
+            @include tablet{
+               
+                }
+            .column__heading {
+
+            }
+
+            .column__information {
+                line-height: 2em;
+                @include laptop{
+                    font-size:1.2em;
+                    }
+                    @include tablet{
+                        font-size:.9em;
+                    }
+            }
+        }
+    }
+}
