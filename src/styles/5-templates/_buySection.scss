@@ -29,7 +29,7 @@
             font-family: 'Trajan Pro';
             font-weight: lighter;
             text-shadow: 7px 5px 2px black;
-            border-bottom: 2px dashed $colorLight1;
+
            animation: rgbFontColor 5s infinite alternate;
            @include laptop{
             padding:1em 0 0 0;

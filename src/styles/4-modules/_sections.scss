@@ -13,7 +13,7 @@
 }
 .corsair__section--container {
     text-align: center;
-    height: 100vh;
+
     @include laptop{
         height: 60%;
         }
@@ -65,13 +65,14 @@
             }
         .column__image {
             img {
-                width: 550px;
+                width: 80%;
                 height: auto;
                 @include laptop{
                     width: 450px;
                     }
                     @include tablet{
                         width: 250px;
+                        margin-top:3em;
                             }
                    
             }

@@ -3,6 +3,7 @@ body {
   color: #f0efef;
   font-family: 'Roboto', sans-serif;
   margin: 0;
+  overflow-x: hidden;
 }
 
 * {
@@ -717,7 +718,15 @@ template {
 .image__caption--container-left .image__caption--image img {
   width: 60%;
   height: auto;
+  display: block;
   float: right;
+}
+
+@media (max-width: 750px) {
+  .image__caption--container-left .image__caption--image img {
+    float: none;
+    margin: auto;
+  }
 }
 
 .image__caption--container-left .image__caption--description .image__caption--information {
@@ -839,7 +848,6 @@ template {
 
 .corsair__section--container {
   text-align: center;
-  height: 100vh;
 }
 
 @media (max-width: 950px) {
@@ -915,7 +923,7 @@ template {
 }
 
 .twocolumn__section--container .column__image img {
-  width: 550px;
+  width: 80%;
   height: auto;
 }
 
@@ -928,6 +936,7 @@ template {
 @media (max-width: 750px) {
   .twocolumn__section--container .column__image img {
     width: 250px;
+    margin-top: 3em;
   }
 }
 
@@ -1093,7 +1102,6 @@ template {
   top: 35px;
   font-family: 'Trajan Pro';
   text-shadow: 7px 5px 2px black;
-  border-bottom: 2px dashed #FF1C01;
 }
 
 @media (max-width: 950px) {
@@ -1224,7 +1232,6 @@ template {
   font-family: 'Trajan Pro';
   font-weight: lighter;
   text-shadow: 7px 5px 2px black;
-  border-bottom: 2px dashed #FF1C01;
   -webkit-animation: rgbFontColor 5s infinite alternate;
           animation: rgbFontColor 5s infinite alternate;
 }

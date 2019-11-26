@@ -54,7 +54,12 @@
         img{
             width:60%;
             height:auto;
+            display:block;
             float:right;
+            @include tablet{
+                float:none;
+                margin: auto;
+            }
               
         }
     }
