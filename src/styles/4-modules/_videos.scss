@@ -12,30 +12,37 @@
     .corsair__video{
         opacity:0.5;
     }
-    .corsair__video--button{
-        font-family:'Roboto Medium';
-        font-size: .9em;
-        position:absolute;
-        cursor: pointer;
-        top:40%;
-        left:50%;
-        transform: translate(-50%,-50%);
-        padding:1em 3.5em;
-        border:2px solid $colorLight1;
-        border-radius: 1px;
-        background:none;
-        color:white;
-        z-index: 1;
-        transition: .5s;
-        &:hover{
-            background-color: white;
-            color:black;
+
+    .corsair__video--link{
+   
+    
+        .corsair__video--button{
+            font-family:'Roboto';
+            font-size: .9em;
+            position:absolute;
+            cursor: pointer;
+            top:40%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            padding:1em 3.5em;
+            border:1px solid $colorLight1;
+            border-radius: 1px;
+            background:none;
+            color:white;
+            z-index: 1;
+            transition: .5s;
+            &:hover{
+                background-color: white;
+                color:black;
+            }
+            @include tablet{
+                top:50%;
+            left:50%;
+            }
         }
-        @include tablet{
-            top:50%;
-        left:50%;
-        }
+
     }
+   
     .corsair__video--description{
         font-family: 'Roboto Light';
         padding:2em 5em;

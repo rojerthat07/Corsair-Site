@@ -557,8 +557,8 @@ template {
   opacity: 0.5;
 }
 
-.corsair__video--container .corsair__video--button {
-  font-family: 'Roboto Medium';
+.corsair__video--container .corsair__video--link .corsair__video--button {
+  font-family: 'Roboto';
   font-size: .9em;
   position: absolute;
   cursor: pointer;
@@ -567,7 +567,7 @@ template {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   padding: 1em 3.5em;
-  border: 2px solid #FF1C01;
+  border: 1px solid #FF1C01;
   border-radius: 1px;
   background: none;
   color: white;
@@ -576,13 +576,13 @@ template {
   transition: .5s;
 }
 
-.corsair__video--container .corsair__video--button:hover {
+.corsair__video--container .corsair__video--link .corsair__video--button:hover {
   background-color: white;
   color: black;
 }
 
 @media (max-width: 750px) {
-  .corsair__video--container .corsair__video--button {
+  .corsair__video--container .corsair__video--link .corsair__video--button {
     top: 50%;
     left: 50%;
   }
