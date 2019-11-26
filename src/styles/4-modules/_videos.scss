@@ -6,7 +6,8 @@
         font-family: 'Roboto Thin';
         color:rgb(221, 220, 220);
         @include tablet{
-            font-size:3em;
+            font-size:2em;
+            margin:1em;
         }
     }
     .corsair__video{
@@ -37,7 +38,7 @@
             }
             @include tablet{
                 top:50%;
-            left:50%;
+                left:50%;
             }
         }
 

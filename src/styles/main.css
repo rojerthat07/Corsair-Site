@@ -550,7 +550,8 @@ template {
 
 @media (max-width: 750px) {
   .corsair__video--container .corsair__video--title {
-    font-size: 3em;
+    font-size: 2em;
+    margin: 1em;
   }
 }
 
