@@ -53,6 +53,36 @@ function updatePercentage() {
 }
 
 
+const abouttl = new TimelineMax();
+
+
+tl.from(".about__heading", .5, {
+    x: -200,
+    opacity: 0
+});
+tl.from(".about__paragraph", 1, {
+    y: 100,
+    opacity: 0
+});
+tl.from(".about__rights", 1, {
+    y: 100,
+    opacity: 0
+}, '-=1');
+tl.from(".about__image", 1, {
+    y: 100,
+    opacity: 0
+}, '-=1');
+
+const aboutScene1 = new ScrollMagic.Scene({
+        triggerElement: ".about__heading"
+    })
+    .setTween(abouttltl)
+    .addTo(controller)
+
+
+
+
+
 
 function cartExit(){
     document.getElementById("cart__section--container").style.display = 'none';

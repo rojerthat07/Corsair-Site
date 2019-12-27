@@ -1,0 +1,32 @@
+.about{
+    padding:1em;
+    text-align: center;
+    
+    .about__heading{
+        font-size: 3em;
+        text-align: left;
+        border-bottom: none;
+        text-shadow: 1px 1px 5px white;
+        color: rgb(247, 247, 247);
+        font-family: font('font1');
+        width:40%;
+        margin:1em auto 1em 1em;
+        border-bottom: 2px solid rgb(233, 33, 33);
+  
+      
+    }
+    .about__paragraph{
+        padding:1em 3em;
+        line-height: 2em;
+        width:70%;
+        margin:auto;
+        font-family: font("font1");
+    }
+    .about__image{
+        width:350px;
+        height: auto;
+    }
+    .about__rights{
+        font-family: font("font1");
+    }
+}
