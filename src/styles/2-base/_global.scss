@@ -40,7 +40,26 @@ hr{
 }
 
 
+.corsair-logo-sticky{
 
+    position: fixed;
+    right:-30px;
+    top:30%;
+    z-index: 3;
+    display: inline;
+    transition: 1s;
+    &:hover{
+        right:-5px;
+    }
+    img{
+        border-radius: 5px;
+        width:70px;
+        &:hover{
+           
+        }
+    }
+ 
+}
 
 
 
