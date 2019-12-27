@@ -11,6 +11,12 @@
     color:white;
     transition: .5s;
     width:70%;
+    @include laptop{
+        font-size: 1.7em;
+    }
+    @include tablet{
+        font-size: 1.1em;
+    }
     &:hover{
 
         color:red;

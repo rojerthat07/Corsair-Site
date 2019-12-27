@@ -12,7 +12,13 @@
         width:40%;
         margin:1em auto 1em 1em;
         border-bottom: 2px solid rgb(233, 33, 33);
-  
+  @include laptop{
+      font-size: 2.3em;
+  }
+  @include tablet{
+    font-size: 1.5em;
+    border-bottom: 1px solid rgb(233, 33, 33);
+}
       
     }
     .about__paragraph{
@@ -21,12 +27,29 @@
         width:70%;
         margin:auto;
         font-family: font("font1");
+        @include laptop{
+            font-size: .9em;
+        }
+        @include tablet{
+            font-size: .8em;
+            width:80%;
+        }
     }
     .about__image{
         width:350px;
         height: auto;
+        @include laptop{
+            width:300px;
+        }
     }
     .about__rights{
         font-family: font("font1");
+        @include laptop{
+            font-size: .9em;
+        }
+        @include tablet{
+            font-size: .8em;
+           
+        }
     }
 }

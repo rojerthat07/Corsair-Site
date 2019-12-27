@@ -18,6 +18,7 @@
 
     .buy__column--1 {
         text-align: right;
+       
         h1 {
             text-align: left;
             padding: 1.4em .2em;
@@ -32,12 +33,13 @@
 
            animation: rgbFontColor 5s infinite alternate;
            @include laptop{
-            padding:1em 0 0 0;
-            font-size: 2em;
+            padding:1em 0 0 .2em;
+            font-size:4em;
+            top: 0px;
         }
            @include tablet{
-            padding:1em 0 0 0;
-            font-size: 3em;
+            top: 35px;
+            font-size: 2.5em;
         }
         }
         img {
@@ -46,7 +48,7 @@
             height: auto;
             @include tablet{
                 width: 230px;
-                
+               
             }
             
         }
