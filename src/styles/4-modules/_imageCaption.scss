@@ -28,12 +28,13 @@
             }
            
         .image__caption--heading{
+            font-size: 1.3em;
             @include tablet{
                 font-size:1em;
                 }
         }
         .image__caption--information{
-            
+            font-size: .9em;
             line-height: 1.5em;
             @include laptop{
                 font-size:.9em;
@@ -71,11 +72,13 @@
     }
     .image__caption--description{
         .image__caption--heading{
+            font-size: 1.3em;
             @include tablet{
                 font-size:1em;
                 }
         }
         .image__caption--information{
+            font-size: .9em;
             line-height: 1.5em;
             @include laptop{
                 font-size:.9em;
