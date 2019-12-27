@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ultron - Corsair One i160</title>
-    <link rel="stylesheet" href="/build/styles/main.min.css">
     <link rel="icon" href="images/logo.jpg">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <!--ScrollMagic and Gsap Javascripts-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
         integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
@@ -19,6 +23,8 @@
         integrity="sha256-+9YNuItWuR4sbqeaNiJOxG0BvptYz4fbUXbIZoH5Jwo=" crossorigin="anonymous"></script>
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <!--Main Stylesheet-->
+    <link rel="stylesheet" href="/build/styles/main.min.css">
 </head>
 
 <body>
@@ -54,7 +60,7 @@
             </div>
             <div class="introduction__column--2">
                 <h2>
-                    <Experience class="light">Experience the <span class="colorLight1">ULTIMATE</span> High-end</span>
+                   Experience the <span class="colorLight1">ULTIMATE</span> High-end</span>
                         Gaming
                 </h2>
                 <video src="/build/videos/cod.mp4" autoplay loop muted loop></video>
@@ -219,7 +225,8 @@
     <hr>
 
     <!--Specifications Section-->
-    <table class="corsair__table">
+    <button data-toggle="collapse" data-target="#corsair__table">Collapsible</button>
+    <table class="corsair__table" id="corsair__table">
         <caption class="corsair__table--caption">Corsair One i160 Specifications</caption>
         <tr>
             <td class="table__detail">Warranty</td>

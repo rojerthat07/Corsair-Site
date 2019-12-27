@@ -14,7 +14,7 @@
 
     .introduction__column--1 {
         text-align: right;
-
+       
         h1 {
             text-align: left;
             padding: 1.4em .2em;
@@ -75,7 +75,12 @@
         }
 
         h2 {
-
+   
+                font-size: 1.7em;
+                @include desktop {
+                    font-size: 1.2em;
+                }
+          
             @include tablet {
                 font-size: 1em;
             }
