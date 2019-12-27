@@ -35,9 +35,13 @@
             width: 350px;
             height: auto;
         }
-        video{
+        iframe{
             width: 50%;
-            height: auto;
+            height:350px;
+           @include tablet{
+            width: 70%;
+            height:250px;
+           }
         }
     }
     .corsair__section--description {
