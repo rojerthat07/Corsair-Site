@@ -41,6 +41,9 @@
         @include laptop{
             width:300px;
         }
+        @include tablet{
+            width:250px;
+        }
     }
     .about__rights{
         font-family: font("font1");
