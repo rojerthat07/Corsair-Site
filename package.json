@@ -1,0 +1,23 @@
+{
+  "name": "corsair-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rojerthat07/Corsair-site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rojerthat07/Corsair-site/issues"
+  },
+  "homepage": "https://rojerthat07.github.io/Corsair-site",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1"
+  }
+}
