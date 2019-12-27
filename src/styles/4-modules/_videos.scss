@@ -6,19 +6,19 @@
         font-family: 'Roboto Thin';
         color:rgb(221, 220, 220);
         @include tablet{
-            font-size:2em;
+            font-size:1em;
             margin:1em;
         }
     }
     .corsair__video{
-        opacity:0.5;
+        opacity:0.3;
     }
 
     .corsair__video--link{
    
     
         .corsair__video--button{
-            font-family:'Roboto';
+            font-family:font("font5");
             font-size: .8em;
             position:absolute;
             cursor: pointer;
@@ -26,18 +26,19 @@
             left:50%;
             transform: translate(-50%,-50%);
             padding:1em 3.5em;
-            border:1px solid $colorLight1;
-            border-radius: 1px;
+            border:2px solid $colorLight2;
+            border-radius: 5px;
             background:none;
             color:white;
             z-index: 1;
             transition: .5s;
             &:hover{
-                background-color: white;
+                background-color: rgb(224, 218, 218);
                 color:black;
             }
             @include tablet{
-                top:50%;
+                font-size: .6em;
+                top:45%;
                 left:50%;
             }
         }

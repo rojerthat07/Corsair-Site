@@ -28,7 +28,9 @@
             }
            
         .image__caption--heading{
-        
+            @include tablet{
+                font-size:1em;
+                }
         }
         .image__caption--information{
             
@@ -37,7 +39,7 @@
                 font-size:.9em;
                 }
                 @include tablet{
-                    font-size:.8em;
+                    font-size:.7em;
                     }
         }
     }
@@ -51,6 +53,10 @@
         text-align: center;
     }
     .image__caption--image{
+        @include tablet{
+            grid-column: 1;
+            grid-row: 1;
+        }
         img{
             width:60%;
             height:auto;
@@ -65,7 +71,9 @@
     }
     .image__caption--description{
         .image__caption--heading{
-
+            @include tablet{
+                font-size:1em;
+                }
         }
         .image__caption--information{
             line-height: 1.5em;
@@ -73,7 +81,7 @@
                 font-size:.9em;
                 }
                 @include tablet{
-                    font-size:.8em;
+                    font-size:.7em;
                     }
         }
     }

@@ -5,11 +5,11 @@ const controller = new ScrollMagic.Controller();
 
 
 tl.from("#rtx2080", .5, {
-    x: 200,
+    x: -200,
     opacity: 0
 });
 tl.from("#rtx2080__info", 1, {
-    x: 200,
+    x: -200,
     opacity: 0
 });
 tl2.from("#intelcore9", .5, {
@@ -21,11 +21,11 @@ tl2.from("#intelcore9__info", 1, {
     opacity: 0
 });
 tl3.from("#vengence", .5, {
-    x: 200,
+    x: -200,
     opacity: 0
 });
 tl3.from("#vengence__info", 1, {
-    x: 200,
+    x: -200,
     opacity: 0
 });
 

@@ -31,5 +31,16 @@ hr{
 }
 
 
+.hr--styled{
+    margin:3em auto;
+    width:15%;
+    @include tablet{
+        margin: 2em auto;
+    }
+}
+
+
+
+
 
 
