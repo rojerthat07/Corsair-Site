@@ -48,27 +48,24 @@ const scene3 = new ScrollMagic.Scene({
     .addTo(controller)
 
 
-function updatePercentage() {
-    tl.progress();
-}
 
 
 const abouttl = new TimelineMax();
 
 
-tl.from(".about__heading", .5, {
+abouttl.from(".about__heading", 1, {
     x: -200,
     opacity: 0
 });
-tl.from(".about__paragraph", 1, {
+abouttl.from(".about__paragraph", 1, {
     y: 100,
     opacity: 0
 });
-tl.from(".about__rights", 1, {
+abouttl.from(".about__rights", 1, {
     y: 100,
     opacity: 0
 }, '-=1');
-tl.from(".about__image", 1, {
+abouttl.from(".about__image", 1, {
     y: 100,
     opacity: 0
 }, '-=1');
@@ -76,8 +73,33 @@ tl.from(".about__image", 1, {
 const aboutScene1 = new ScrollMagic.Scene({
         triggerElement: ".about__heading"
     })
-    .setTween(abouttltl)
+    .setTween(abouttl)
     .addTo(controller)
+
+const worthtl = new TimelineMax();
+
+
+worthtl.from("#craftsmanship", .5, {
+    y: 50,
+    opacity: 0
+});
+worthtl.from("#performance", .5, {
+    y: 50,
+    opacity: 0
+});
+worthtl.from("#guaranteed", .5, {
+    y: 50,
+    opacity: 0
+});
+
+
+const worthScene1 = new ScrollMagic.Scene({
+        triggerElement: "#worth-trigger"
+    })
+    .setTween(worthtl)
+    .addTo(controller)
+
+
 
 
 
