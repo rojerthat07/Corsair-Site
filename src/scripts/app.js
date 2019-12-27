@@ -103,7 +103,7 @@ const buttontl = new TimelineMax();
 
 
 buttontl.from(".collapse__button", 1, {
-    y: -200,
+    y: -50,
     opacity: 0
 });
 

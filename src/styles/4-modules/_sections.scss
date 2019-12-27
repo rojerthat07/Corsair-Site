@@ -1,5 +1,4 @@
 .section__main-heading {
- 
     text-align: center;
     font-family: font("font3");
     font-size: 2.5em;
@@ -13,9 +12,21 @@
         width:90%;
         font-size:1.5em;
         padding: 2em .5em 2em .5em;
-        margin: 0em auto;
+        margin: 1em auto;
     }
 }
+
+.section__main-heading-90 {
+   width:90%;
+   font-size:2em;
+   @include tablet{
+  
+    font-size:1.5em;
+    padding: 2em .5em 1em .5em;
+    margin: 1em auto;
+}
+}
+
 .corsair__section--container {
     text-align: center;
 
@@ -31,16 +42,15 @@
             height: auto;
         }
         video{
-            width: 80%;
+            width: 50%;
             height: auto;
         }
     }
     .corsair__section--description {
         padding: 2em 3em;
-
         .corsair__section--heading {
             font-family: 'Roboto Light';
-            font-size: 3em;
+            font-size: 2.5em;
             @include laptop{
                 font-size: 2em;
                 }
@@ -48,6 +58,7 @@
 
         .corsair__section--information {
             font-family: 'Roboto Light';
+            font-size: .9em;
             @include laptop{
                 font-size: .8em;
                 line-height:1.5em;
