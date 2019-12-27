@@ -99,6 +99,22 @@ const worthScene1 = new ScrollMagic.Scene({
     .setTween(worthtl)
     .addTo(controller)
 
+const buttontl = new TimelineMax();
+
+
+buttontl.from(".collapse__button", 1, {
+    y: -200,
+    opacity: 0
+});
+
+
+
+const buttonScene1 = new ScrollMagic.Scene({
+        triggerElement: "#collapse__button-trigger"
+    })
+    .setTween(buttontl)
+    .addTo(controller)
+
 
 
 

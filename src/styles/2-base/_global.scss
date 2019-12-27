@@ -28,12 +28,14 @@ hr{
     width:90%;
     margin-top:5em;
     margin-bottom:3em;
+    border-color: white;
 }
 
 
 .hr--styled{
     margin:3em auto;
     width:15%;
+    border-color: white;
     @include tablet{
         margin: 2em auto;
     }

@@ -1,23 +1,42 @@
+.collapse__button{
+    padding:1em;
+    font-size: 2em;
+    display: block;
+    margin: 1em auto;
+    border: none;
+    border-bottom:1px solid red;
+    border-radius: 5px;
+    background: black;
+    color:white;
+    transition: .5s;
+    width:70%;
+    &:hover{
+
+        color:red;
+    }
+}
+
+
 .corsair__table{
+    margin-bottom: 3em;
     padding:1em;
     font-family: 'Roboto Light';
     width:80%;
     margin:auto;
- 
+    border-left:1px solid white;
     @include tablet{
         width:90%;
     }
-  
-    border-left:1px solid white;
     .corsair__table--caption{
-        font-size: 2em;
+        font-size: 3em;
         @include tablet{
             font-size:1em;
         }
     }
-    tr{
-     
-    }
+  
+
+  
+   
     td{
         padding:.4em 2em;
         @include tablet{
