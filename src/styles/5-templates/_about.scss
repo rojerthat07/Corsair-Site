@@ -19,6 +19,11 @@
     font-size: 1.5em;
     border-bottom: 1px solid rgb(233, 33, 33);
 }
+@include mobile{
+    font-size: 1.4em;
+    width:60%;
+  
+}
       
     }
     .about__paragraph{
@@ -34,6 +39,11 @@
             font-size: .8em;
             width:80%;
         }
+        @include mobile{
+            font-size: .7em;
+            width:100%;
+          
+        }
     }
     .about__image{
         width:350px;
@@ -43,6 +53,10 @@
         }
         @include tablet{
             width:250px;
+        }
+        @include mobile{
+            width:200px;
+          
         }
     }
     .about__rights{

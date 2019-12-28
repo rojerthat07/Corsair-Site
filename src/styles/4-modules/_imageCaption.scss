@@ -63,7 +63,7 @@
     grid-template-columns: 1fr 1fr;
     padding:1em 5em;
     @include laptop{
-        padding:1em 2em;
+        padding:1em 1em;
     }
     @include tablet{
         grid-template-columns: 1fr;

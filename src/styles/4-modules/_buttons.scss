@@ -8,6 +8,9 @@
     @include tablet{
        font-size: .8em;
     }
+    @include mobile{
+      font-size: .6em;
+   }
 
     &:hover{
        opacity:1;

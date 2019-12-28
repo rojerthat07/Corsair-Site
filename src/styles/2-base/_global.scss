@@ -43,7 +43,6 @@ hr{
 
 
 .corsair-logo-sticky{
-
     position: fixed;
     right:-30px;
     top:30%;
@@ -56,11 +55,13 @@ hr{
     img{
         border-radius: 5px;
         width:70px;
+        @include mobile{
+            width:50px;
+        }
         &:hover{
            
         }
     }
- 
 }
 
 

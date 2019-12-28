@@ -63,6 +63,10 @@
                     padding: 2em .5em;
                     margin: 1em 0em;
                 }
+                @include mobile{
+                    font-size: .6em;
+                    padding: 2em .8em;
+                }
 
                
             }
