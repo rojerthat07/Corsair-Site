@@ -11,6 +11,7 @@
     color:white;
     transition: .5s;
     width:70%;
+   
     @include laptop{
         font-size: 1.7em;
     }
@@ -25,12 +26,15 @@
 
 
 .corsair__table{
+    text-align: center;
     margin-bottom: 3em;
     padding:1em;
     font-family: 'Roboto Light';
     width:80%;
     margin:auto;
-    border-left:1px solid white;
+    border:1px solid white;
+    max-width: 1400px;
+    margin: auto;
     @include tablet{
         width:90%;
     }
@@ -46,9 +50,13 @@
    
     td{
         padding:.4em 2em;
+        font-size: .7em;
         @include tablet{
             font-size:.7em;
         }
+    }
+    td:nth-of-type(2){
+        font-size: .6em;
     }
     tr:nth-child(odd){
         background-color: $colorDark2;
@@ -56,6 +64,7 @@
     }
     .table__detail{
         font-weight: bold;
+
       
     }
 }

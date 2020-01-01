@@ -8,6 +8,8 @@
     border-bottom: 1px solid red;
     width:70%;
     font-style: italic;
+    max-width: 1200px;
+  
     @include laptop{
         font-size:2em;
     }
@@ -26,6 +28,10 @@
 
 .corsair__section--container {
     text-align: center;
+    width:80%;
+    margin: auto;
+    max-width: 1400px;
+    margin: auto;
 
     @include laptop{
         height: 60%;
@@ -76,6 +82,7 @@
     align-content: center;
     align-items:center;
     height:100%;
+   
 
    
     @include laptop{
@@ -133,6 +140,8 @@
     justify-content: center;
     text-align: center;
     padding: 0em 2em;
+    max-width: 1200px;
+    margin: auto;
    
 
     @include laptop{
@@ -193,6 +202,8 @@
 
 //Promo Section
 .promo{
+    max-width: 1400px;
+    margin: auto;
     .promo__heading{
         text-align: center;
         font-family: font("font3");

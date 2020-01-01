@@ -6,10 +6,9 @@
     align-content: center;
     text-align: center;
     position: relative;
-    background: linear-gradient(rgba(3, 3, 3, 0.9), rgba(51, 3, 3, 0.7)), url('/build/images/nav-logo.png');
-    background-size: cover;
-    background-repeat: no-repeat;
     height: 100%;
+    max-width: 1200px;
+    margin: auto;
     @include tablet{
         grid-template-columns: 1fr;
         padding:2em;

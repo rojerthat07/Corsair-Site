@@ -5,6 +5,8 @@
     align-items: center;
     align-content: center;
     text-align: center;
+    max-width: 1200px;
+    margin: auto;
 
     @include tablet {
         grid-template-columns: 1fr;

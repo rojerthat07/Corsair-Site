@@ -3,8 +3,10 @@
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
-    margin:0;
+
     padding:1em 5em;
+    max-width: 1200px;
+    margin: auto;
     @include laptop{
         padding:1em 1em;
     }
@@ -62,6 +64,8 @@
     display:grid;
     grid-template-columns: 1fr 1fr;
     padding:1em 5em;
+    max-width: 1200px;
+    margin: auto;
     @include laptop{
         padding:1em 1em;
     }
