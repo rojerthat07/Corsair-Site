@@ -56,7 +56,8 @@
     .buy__column--2 {
         
        h1{
-        font-family: 'Roboto Thin';
+        font-family: font("font3");
+        font-weight: lighter;
         font-size: 3em;
         @include laptop{
             font-size: 2em;

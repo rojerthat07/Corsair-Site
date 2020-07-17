@@ -5,7 +5,8 @@
 
     .corsair__video--title{
         text-align: center;
-        font-family: 'Roboto Thin';
+        font-family: font("font3");
+        font-weight:300;
         color:rgb(221, 220, 220);
         @include tablet{
             font-size:1em;
@@ -20,7 +21,7 @@
    
     
         .corsair__video--button{
-            font-family:font("font5");
+            font-family: font("font3");
             font-size: .8em;
             position:absolute;
             cursor: pointer;
@@ -48,7 +49,8 @@
     }
    
     .corsair__video--description{
-        font-family: 'Roboto Light';
+        font-family: font("font3");
+        font-weight: lighter;
         padding:2em 5em;
         line-height: 1.5em;
         letter-spacing: 0em;
